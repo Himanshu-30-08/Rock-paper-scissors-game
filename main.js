@@ -18,3 +18,25 @@ function gethumanchoice() {
         return gethumanchoice();
     }
 }
+var humanScore = 0;
+var computerScore = 0;
+
+function playround(humanchoice, computerchoice) {
+    if (humanchoice === computerchoice) {
+        console.log("Tie! You both chose " + humanchoice + ".");
+        console.log("Current Score: You " + humanScore + " Computer " + computerScore + ".");
+    } else if (
+        (humanchoice === "rock" && computerchoice === "scissors") ||
+        (humanchoice === "paper" && computerchoice === "rock") ||
+        (humanchoice === "scissors" && computerchoice === "paper")
+    ) {
+        humanScore++;
+        console.log("You win! " + humanchoice + " beats " + computerchoice + ".");
+        console.log("Current Score: You " + humanScore + " Computer " + computerScore + ".");
+    } else {
+        computerScore++;
+        console.log("You lose! " + computerchoice + " beats " + humanchoice + ".");
+        console.log("Current Score: You " + humanScore + " Computer " + computerScore + ".");
+    }
+}
+playround(gethumanchoice(), getcomputerchoice());
