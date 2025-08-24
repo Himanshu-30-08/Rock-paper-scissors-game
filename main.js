@@ -39,4 +39,19 @@ function playround(humanchoice, computerchoice) {
         console.log("Current Score: You " + humanScore + " Computer " + computerScore + ".");
     }
 }
-playround(gethumanchoice(), getcomputerchoice());
+
+function playgame() {
+    for (let i = 0; i < 5; i++) {
+        playround(gethumanchoice(), getcomputerchoice());
+    }
+    console.log("Final Score: You " + humanScore + " - " + computerScore + " Computer");
+    if (humanScore > computerScore) {
+        console.log("Congratulations! You won the game!");
+    } else if (humanScore < computerScore) {
+        console.log("Sorry, you lost the game. Better luck next time!");
+    } else {
+        console.log("The game is a tie!");
+    }
+}
+
+playgame();
