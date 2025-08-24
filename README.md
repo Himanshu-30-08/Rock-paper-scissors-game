@@ -6,3 +6,6 @@ This is my third project in odin project.A rock-paper-scissors-game on the conso
 
 # Live-preview
 [Rock-paper-scissors-game](https://himanshu-30-08.github.io/Rock-paper-scissors-game/)
+
+# Modifications 
+Modified the webpage with adding gui and modify logic to show js on webpage instead of console
