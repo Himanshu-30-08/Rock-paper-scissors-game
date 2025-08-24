@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color:rgb(34, 66, 171);
+}
+.header{
+    width:100%;
+    height: 20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+    color: rgb(64,124,15);
+    border: 5px solid red;
+}
+
+.btns , .another-round{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.btns button,.play-again{
+    background-color: rgb(214, 101, 148);
+    color: rgb(19, 111, 137);
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 25px;
+    border-radius: 10px;
+    
+}
+.btns button:hover{
+    background-color: rgb(228, 236, 234);
+}
+
+.results{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 20px 0;
+}
+.content{
+    border:5px solid orange;
+    height: 70%;
+    width: 100%;
+
+}
+footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(64,124,15);
+    border: 5px solid red;
+}
+
+.choice , .score{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+.results .result-message{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.results h1{
+    font-size: 30px;
+    font-weight: 900;
+}

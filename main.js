@@ -68,8 +68,9 @@ const playAgainButton = document.querySelector(".play-again");
 playAgainButton.addEventListener("click", function () {
   humanScore = 0;
   computerScore = 0;
-  score.textContent = "";
-  result.textContent = "";
+  score.textContent = "Current Score: You 0 | Computer 0! Choose to start";
+  result.textContent = "Result will be displayed here!";
+  choice.textContent = "The choices are displayed here!";
   buttons.forEach(function (button) {
     button.disabled = false;
   });
